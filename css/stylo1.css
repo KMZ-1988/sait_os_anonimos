@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+}
+
+/*banner*/
+.banner {
+    width: auto;
+    height: 350px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+header {
+    background: #000000;
+    color: #353535;
+    padding: 1%;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    background: black;
+    padding: 25px;
+}
+
+/*efeito de mauser ao passar porcima da tela.
+main:hover {
+    background-color: #050505;
+}*/
+
+.divisoes {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 8px;
+    padding:8px;
+}
+
+.caixa {
+    background: black;
+    padding: 0%;
+    text-align: center;
+    border-radius: 15px;
+
+}
+.caixa:hover{
+    background-color: #d4af37;
+}
+/* coloca cor nas letras dos cardes*/
+.tab {
+    color: rgb(196, 171, 171);
+}
+.tab{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+ nov a {
+    color: rgb(201, 191, 191);
+}
+.link {
+    color: #382e0e;
+}
+
+footer { /* roda pe do sait*/
+    background: #7e030346;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+}
+.foto-materia {
+    display: block;
+    width: 150px;
+    height: auto;
+    float: right;
+    margin: 0 0 5px 5px;
+    border-radius: 1px;
+}
+
+
+.h1 {
+    color: aliceblue;
+}
+.h2 {
+    color: #A7A7A7;
+}
+
+.p{
+    color: #A7A7A7;
+}
+
+@media (max-width: 600px){
+    .container {
+        flex-direction: column;
+    }
+
+    .divisoes {
+        grid-template-columns: 1ft;
+    }
+}
